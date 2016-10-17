@@ -6,6 +6,8 @@ var CountdownForm = React.createClass({
 
     var strSeconds = this.refs.secondsInput.value;
 
+    console.log('input count', $('input').length);
+
     // .match method expects a regular expression
     if (strSeconds && strSeconds.match(/^[0-9]*$/)) {
       this.refs.secondsInput.value = '';
